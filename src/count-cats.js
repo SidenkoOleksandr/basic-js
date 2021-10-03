@@ -15,12 +15,15 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default function countCats(matrix) {
-  let cat = matrix.reduce((acc, subArray) => acc.concat(subArray), []);
-  let sum = 0
-  cat.forEach(i => {
-    if (i == '^^') {
-      sum = sum + 1
-    }
-  })
-  return sum
+let cat = matrix.reduce((acc, subArray) => acc.concat(subArray), []);
+let sum = 0
+cat.forEach(i => {
+  if (i == '^^') {
+    sum = sum + 1
+  }
+})
+return sum
 }
+
+
+
